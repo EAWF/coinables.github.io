@@ -91,8 +91,8 @@ account: <input type="number" id="seedToXprvp3" value="0"><br>
 seed: <input type="text" id="fromHDSeedp1" size="100"><br>
 derivationPath: <select id="fromHDSeedp2"><option value="44">44</option><option value="49">49</option><option value="84">84</option></select><br>
 account: <input type="text" id="fromHDSeedp3" value="0"><br>
-change: <input type="text" id="fromHDSeedp4" value="0"><br>
-index: <input type="text" id="fromHDSeedp5" value="0"><br>
+change: <input type="text" id="fromHDSeedp4" min="0" max="1" value="0"><br>
+index: <input type="text" id="fromHDSeedp5" min="0" max="79999999" value="0"><br>
 <button id="fromHDSeed" onclick="return fromHDSeedbtn();">fromHDSeed</button>
 <br>
 <textarea id="fromHDSeedout" cols="130" rows="5"></textarea>
@@ -100,8 +100,8 @@ index: <input type="text" id="fromHDSeedp5" value="0"><br>
 <h3>fromXpub(xpub, change, index)</h3>
 <p>3 parameters (string, integer, integer, integer/string). First parameter is xpub/ypub/zpub. Second is change address account. Third parameter is key index.</p>
 xpub: <input type="text" id="fromXpubp1" size="100"><br>
-change: <input type="number" id="fromXpubp2" value="0"><br>
-index: <input type="number" id="fromXpubp3" value="0"><br>
+change: <input type="number" id="fromXpubp2" min="0" max="1" value="0"><br>
+index: <input type="number" id="fromXpubp3" min="0" max="79999999" value="0"><br>
 <button id="fromXpub" onclick="return fromXpubbtn();">fromXpub</button>
 <br>
 <textarea id="fromXpubout" cols="130" rows="5"></textarea>
@@ -110,8 +110,8 @@ index: <input type="number" id="fromXpubp3" value="0"><br>
 <h3>xprvToWIF(xprv/yprv/zprv, change, index)</h3>
 <p>3 parameters (string, integer, integer). First parameter is xprv/yprv/zprv. Second is change address account. Third parameter is key index.</p>
 xprv/yprv/zprv: <input type="text" id="xprvToWIF1" size="100"><br>
-change: <input type="number" id="xprvToWIF2" value="0"><br>
-index: <input type="number" id="xprvToWIF3" value="0"><br>
+change: <input type="number" id="xprvToWIF2" min="0" max="1" value="0"><br>
+index: <input type="number" id="xprvToWIF3" min="0" max="79999999" value="0"><br>
 <button id="xprvToWIF" onclick="return xprvToWIFbtn();">xprvToWIF</button>
 <br>
 <textarea id="xprvToWIFout" cols="130" rows="5"></textarea>
@@ -120,7 +120,7 @@ index: <input type="number" id="xprvToWIF3" value="0"><br>
 <br><br>
 <h3>Bulk From Xpub/Ypub/Zpub</h3>
 xpub/ypub/zpub: <input type="text" id="bulkp1" size="100"><br>
-change: <input type="number" id="bulkp2" value="0"><br>
+change: <input type="number" id="bulkp2" min="0" max="1" value="0"><br>
 depth: <input type="number" id="bulkp3" value="20"><br>
 <button id="bulk" onclick="return bulk();">Generate</button>
 <br>
